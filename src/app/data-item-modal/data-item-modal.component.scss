@@ -1,0 +1,27 @@
+.form-control {
+    width: 100%
+};
+
+
+.mat-select-pane {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.mat-option {
+    display: inline-block;
+}
+
+.color-option,
+.mat-select {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.color-option {
+    font-size: 0;
+}

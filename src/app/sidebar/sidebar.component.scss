@@ -1,0 +1,28 @@
+.sidebar {
+    position: fixed;
+    width: 280px;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    background: #f1f1f1;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.segments {
+    padding: 20px 0;
+    ul {
+        padding: 0;
+    }
+}
+
+.btn-primary {
+    margin-top: auto;
+    padding: 8px 30px;
+    width: 100%;
+    text-align: left;
+    svg {
+        margin-right: 5px;
+    }
+}

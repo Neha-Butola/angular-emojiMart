@@ -1,0 +1,35 @@
+.data-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-wrap {
+    padding: 0 15px 20px;
+    &:first-child {
+        order: 1;
+    }
+}
+
+.data {
+    &-card {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            border-color: #334bfa !important;
+            box-shadow: 0px 5px 5px rgba(51, 75, 250, 0.25);
+            path {
+                fill: #334bfa;
+            }
+        }
+    }
+    &-name {
+        font-size: 14px;
+        text-transform: capitalize;
+        margin-top: 10px;
+    }
+}

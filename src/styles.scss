@@ -1,1 +1,173 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file */
+
+/* ----- variables ---*/
+
+$black : #3C3C3C;
+$body-color : $black;
+
+$blue: #334BFA;
+$primary: $blue;
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 700 14px 'Inter', sans-serif;
+  color: $body-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.text-muted {
+  color: rgba(60, 60, 60, 0.5);
+  text-transform: uppercase;
+}
+
+/*=== buttons ====*/
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  min-width: 150px;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: transparent;
+
+  &-primary {
+    background-color: $primary;
+    color: #fff;
+  }
+
+  &-outline {
+    border-color: $primary;
+    color: $primary;
+  }
+
+  &[disabled] {
+    background: rgba(60, 60, 60, 0.5);
+  }
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+}
+
+.button-groups {
+  display: flex;
+  margin-top: 5rem;
+
+  button {
+    +button {
+      margin-left: 15px;
+    }
+  }
+}
+
+.btn-close {
+  background: transparent;
+  border: 0;
+  float: right;
+  outline: 0;
+
+  &:hover {
+    path {
+      fill: $primary;
+    }
+  }
+}
+
+/*=== Modal ===*/
+.cdk-overlay-pane {
+  width: 100% !important;
+  max-width: 550px !important;
+}
+
+
+/*=== form css =====*/
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  border: 1px solid #888888;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  &:focus,
+  &:focus-visible {
+    border: 2px solid $primary;
+    outline: none;
+  }
+
+  &.drop-down {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) center;
+  }
+
+}
+
+textarea {
+  resize: none;
+}
+
+.mat-form-field {
+  display: block !important;
+
+  &-flex {
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+
+  &-infix {
+    padding: 0 !important;
+    border: 0 !important;
+  }
+}
+
+.mat-select-arrow,
+.mat-form-field-label-wrapper,
+.mat-form-field-underline {
+  display: none !important;
+}
+
+.emoji-mart {
+  position: absolute;
+  z-index: 1;
+  width: 500px !important;
+  max-width: 100%;
+}
+
+.mat-form-field-wrapper {
+  padding: 0 !important;
+}
